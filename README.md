@@ -4,14 +4,16 @@
 This project simulates an Instagram-like social media platform and performs end-to-end user behavior analysis using Python, MySQL, and Tableau.
 The objective is to analyze platform growth, user engagement, social relationships, and content popularity through a complete data analytics workflow.
 
+---
+
 ## Technology Stack
 
 Python
 MySQL
 Tableau
 
-# Project Workflow
-## Step 1: Data Generation
+## Project Workflow
+### Step 1: Data Generation
 
 Python was used to generate simulated social media data, including:
 Users
@@ -21,7 +23,7 @@ Follows
 Comments
 The generated dataset contains approximately 10,000 users and related behavioral records.
 
-## Step 2: Data Cleaning
+### Step 2: Data Cleaning
 
 Python was used to identify and process:
 Missing values
@@ -30,7 +32,7 @@ Invalid user interactions
 Abnormal user behaviors
 Data quality checks were performed before importing the data into MySQL.
 
-## Step 3: Database Construction
+### Step 3: Database Construction
 
 The cleaned data was imported into MySQL.
 Main tables:
@@ -40,7 +42,7 @@ likes
 follows
 comments
 
-## Step 4: SQL Analysis Layer
+### Step 4: SQL Analysis Layer
 
 Business-oriented analytical tables were created:
 user_growth
@@ -51,7 +53,7 @@ photo_hot
 user_segment
 These tables were designed to simplify analysis and reduce the amount of processing required in Tableau
 
-## Step 5: Tableau Dashboard
+### Step 5: Tableau Dashboard
 
 A dashboard was created to visualize:
 User Growth Trend
@@ -62,11 +64,13 @@ Popular Photos Ranking
 User Segmentation Analysis
 The dashboard provides an overview of platform growth, engagement, social behavior, and content popularity.
 
-# Project Limitations
+---
+
+## Project Limitations
 
 Although the project successfully demonstrates a complete analytics workflow, several simplifications were made during data generation.
 
-## 1. Geographic Information Is Missing
+### 1. Geographic Information Is Missing
 
 The current dataset does not contain:
 Country
@@ -74,12 +78,12 @@ Region
 City
 As a result, geographical behavior analysis cannot be performed.
 
-## 2. Social Network Structure Is Too Uniform
+### 2. Social Network Structure Is Too Uniform
 
 In reality, social networks usually follow a power-law distribution:
 Most users have few followers. And a small number of influencers have very large audiences. The current dataset does not fully capture this phenomenon.
 
-## 3. No Influencer (KOL) Layer
+### 3. No Influencer (KOL) Layer
 
 All users currently have similar behavioral characteristics.
 Real-world platforms contain:
@@ -89,11 +93,11 @@ Content creators
 Influencers (KOLs)
 Future versions should simulate multiple user types.
 
-## 4. Content Categories Are Missing
+### 4. Content Categories Are Missing
 
 Photos currently have no content labels.
 
-## 5. Limited Temporal Dynamics
+### 5. Limited Temporal Dynamics
 
 User behavior is generated without considering:
 Seasonal effects
@@ -101,30 +105,39 @@ Viral events
 Platform campaigns
 Future datasets could simulate more realistic activity patterns over time.
 
-# Future Improvements
+## Future Improvements
 
 Planned upgrades include:
 
-## Data Layer
+### Data Layer
 Add country and region information
 Add user demographics
 Add content categories
 Add hashtag data
-## Social Network Layer
+### Social Network Layer
 Simulate influencer-centered networks
 Introduce follower hierarchy
 Create more realistic social graph structures
-## Analytics Layer
+### Analytics Layer
 Retention analysis
 Cohort analysis
 User lifecycle analysis
 KOL identification
 Community detection
-## Dashboard Layer
+### Dashboard Layer
 Interactive filters
 Geographic maps
 Time-series drill-down
 KPI monitoring dashboard
+### Automated Data Pipeline
+The current project follows a manual workflow:
+Data Generation → Data Cleaning → MySQL → Tableau
+Most steps require manual execution.
+A future goal is to build a fully automated pipeline so that new data can flow through the system with minimal manual intervention.
+
+
+---
+
 ## Conclusion
 
 This project demonstrates a complete analytics workflow from data generation and cleaning to database modeling and business intelligence visualization.
