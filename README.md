@@ -62,7 +62,7 @@ Popular Photos Ranking
 User Segmentation Analysis
 The dashboard provides an overview of platform growth, engagement, social behavior, and content popularity.
 
-## Project Limitations
+# Project Limitations
 
 Although the project successfully demonstrates a complete analytics workflow, several simplifications were made during data generation.
 
@@ -101,7 +101,7 @@ Viral events
 Platform campaigns
 Future datasets could simulate more realistic activity patterns over time.
 
-## Future Improvements
+# Future Improvements
 
 Planned upgrades include:
 
