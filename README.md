@@ -134,7 +134,9 @@ The current project follows a manual workflow:
 Data Generation → Data Cleaning → MySQL → Tableau
 Most steps require manual execution.
 A future goal is to build a fully automated pipeline so that new data can flow through the system with minimal manual intervention.
-
+### Connection to Real Business Scenarios
+The current project focuses primarily on user behavior data, including registrations, likes, follows, comments, and content interactions.
+While these metrics are useful for understanding platform activity, they do not fully reflect the business objectives that companies typically track.
 
 ---
 
